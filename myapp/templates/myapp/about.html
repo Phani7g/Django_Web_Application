@@ -1,0 +1,11 @@
+{% extends 'myapp/base.html' %}
+{% block title %}
+APP About page
+{% endblock %}
+
+{% block body_block %}
+    <p><b>This is an E-learning Website! Search our Topics to find all available Courses.</b></p>
+    <h4>Number of time this page visited in last 5 minutes: {{ about_visits }}</h4>
+    <p><a href="{% url 'myapp:index' %}">Main page using URL namespacing </a></p>
+    <p><a href="/myapp">Main page using Hardcoded URL </a></p>
+{% endblock %}
