@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Topic, Course, Student, Order, Review
 
-
+#changing admin view in admin portal
 class CourseAdmin(admin.ModelAdmin):
     fields = [('title', 'topic'), ('price', 'num_reviews', 'for_everyone')]
     list_display = ('title', 'topic', 'price')
