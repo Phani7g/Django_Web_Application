@@ -2,12 +2,13 @@
 from datetime import datetime
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
-from .forms import SearchForm, OrderForm, ReviewForm
+from .forms import SearchForm, OrderForm, ReviewForm, RegisterForm
 from django.shortcuts import get_object_or_404, redirect
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 from .models import Topic, Course, Student, Order
 
@@ -15,7 +16,7 @@ from .models import Topic, Course, Student, Order
 # Create your views here.
 def index(request):
     top_list = Topic.objects.all().order_by('id')[:10]
-    #return render(request, 'myapp/index.html', {'top_list': top_list})
+    # return render(request, 'myapp/index.html', {'top_list': top_list})
     return render(request, 'myapp/index.html',
                   {'top_list': top_list, 'last_login': request.session.get('last_login', False)})
 
@@ -45,6 +46,8 @@ def about(request):
     response = render(request, 'myapp/about.html', {'about_visits': about_visits})
     response.set_cookie('about_visits', about_visits, expires=300)
     return response
+
+
 #    response = HttpResponse()
 #    head1 = '<p><b>' + 'This is an E-learning Website! Search our Topics to find all available Courses.' + '</b></p>'
 #    response.write(head1)
@@ -174,3 +177,22 @@ def my_account(request):
                           {'message': 'You are not a registered student! Please Login as Student!!'})
     else:
         return render(request, 'myapp/myaccount.html', {'message': 'Please Login First!'})
+
+
+def register(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        uid = request.POST['username']
+        psw = request.POST['password1']
+        if User.objects.get(username=uid):
+            return render(request, 'myapp/login.html', {'message': 'Username Already Exists! Please Login'})
+        elif form.is_valid():
+            form.save()
+            user = authenticate(username=uid, password=psw)
+            login(request, user)
+            return redirect('myapp:index')
+        else:
+            return HttpResponse('Invalid login details.')
+    else:
+        form = RegisterForm()
+        return render(request, 'myapp/register.html', {'form': form})

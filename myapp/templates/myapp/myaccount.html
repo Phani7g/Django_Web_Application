@@ -4,7 +4,8 @@
     {% if message %}
             <h3> {{ message }}</h3><br>
             {% if request.user.is_anonymous %}
-                <a href="{% url 'myapp:login' %}">Login</a><br>
+                <a href="{% url 'myapp:login' %}">Login</a><br><br><br>
+                <a href="{% url 'myapp:register' %}">Register</a><br>
                 {% else %}
             <a href="{% url 'myapp:logout' %}">Logout</a><br>
                 {% endif %}
@@ -24,22 +25,22 @@
             <tr>
                 <td> Interested in </td>
                 <td> : </td>
-                <td> {% for topic in tops %}
-                        {{ topic }} ,
+                <td> {% for t in tops %}
+                        {{ t }} ,
                      {% endfor %}
                 </td>
             </tr>
             <tr>
                 <td> Registered in </td>
                 <td> : </td>
-                <td> {% for course in cors %}
-                        {{ course }} ,
+                <td> {% for r in cors %}
+                        {{ r }} ,
                      {% endfor %}
                 </td>
             </tr>
         </table>
         <br>
         <a href="{% url 'myapp:logout' %}">Logout</a>
-        <a href="{% url 'myapp:logout' %}">Login</a><br><br>
+        <br><br>
     {% endif %}
 {% endblock %}
