@@ -6,12 +6,10 @@
     {% if message %}
         {{ message }}<br><br>
     {% endif %}
+    <h3>Please Login!</h3>
     <form id="Login_form" action="{% url 'myapp:login' %}" method="post">
         {% csrf_token %}
-        Username:<input type="text" name="username" placeholder="Enter Username"/>
-        <br>
-        Password:<input type="password" name="password" placeholder="Enter Password"/>
-        <br>
+        {{ form.as_p }}
         <input type="submit" name="submit2" value="Login" />
     </form>
 </body>

@@ -2,15 +2,16 @@
 from datetime import datetime
 
 from django.contrib.auth.models import User
+from django.db.models import Q
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
-from .forms import SearchForm, OrderForm, ReviewForm, RegisterForm
+from .forms import SearchForm, OrderForm, ReviewForm, RegisterForm, LoginForm
 from django.shortcuts import get_object_or_404, redirect
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.urls import reverse
-#from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 
 from .models import Topic, Course, Student, Order
 
@@ -117,27 +118,34 @@ def place_order(request):
         form = OrderForm()
         return render(request, 'myapp/place_order.html', {'form': form})
 
-
 def review(request):
-    if request.method == 'POST':
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            rating = form.cleaned_data['rating']
-            if 1 <= rating <= 5:
-                review = form.save()
-                course = review.course
-                course.num_reviews += 1
-                course.save()
-                return redirect('myapp:index')
+    if request.user.is_authenticated:
+        sname=request.user.first_name
+        if Student.objects.filter(first_name=sname, level='UG') | Student.objects.filter(first_name=sname, level='PG'):
+            if request.method == 'POST':
+                form = ReviewForm(request.POST)
+                if form.is_valid():
+                    rating = form.cleaned_data['rating']
+                    if 1 <= rating <= 5:
+                        review = form.save()
+                        course = review.course
+                        course.num_reviews += 1
+                        course.save()
+                        return redirect('myapp:index')
+                    else:
+                        return render(request, 'myapp/review.html',
+                                      {'form': form, 'message': 'You must enter a rating between 1 and 5!'})
+                else:
+                    return HttpResponse('Invalid form data')
+                    # return render(request, 'myapp/review.html', {'form': form})
             else:
-                return render(request, 'myapp/review.html',
-                              {'form': form, 'message': 'You must enter a rating between 1 and 5!'})
+                form1 = ReviewForm()
+                return render(request,'myapp/review.html',{'form':form1})
         else:
-            return HttpResponse('Invalid data')
-            # return render(request, 'myapp/review.html', {'form': form})
+            return HttpResponse('Please login as student with level undergraduate and postgraduate')
     else:
-        form = ReviewForm()
-        return render(request, 'myapp/review.html', {'form': form})
+        form1 = LoginForm()
+        return redirect(reverse('myapp:login'), {'message': 'Please login first', 'form': form1})
 
 
 def user_login(request):
@@ -150,13 +158,14 @@ def user_login(request):
                 login(request, user)
                 request.session['last_login'] = str(datetime.now().isoformat(',', 'seconds'))
                 request.session.set_expiry(3600)
-                return HttpResponseRedirect(reverse('myapp:index'))
+                return HttpResponseRedirect(reverse('myapp:my_account'))
             else:
                 return HttpResponse('Your account is disabled.')
         else:
             return HttpResponse('Invalid login details.')
     else:
-        return render(request, 'myapp/login.html')
+        form = LoginForm()
+        return render(request, 'myapp/login.html', {'form': form})
 
 
 @login_required
@@ -178,7 +187,9 @@ def my_account(request):
             return render(request, 'myapp/myaccount.html',
                           {'message': 'You are not a registered student! Please Login as Student!!'})
     else:
-        return render(request, 'myapp/myaccount.html', {'message': 'Please Login First!'})
+        form1 = LoginForm()
+        return redirect(reverse('myapp:login'), {'message': 'Please login first', 'form': form1})
+        # return render(request, 'myapp/myaccount.html', {'message': 'Please Login First!'})
 
 
 def register(request):
@@ -187,7 +198,9 @@ def register(request):
         uid = request.POST['username']
         psw = request.POST['password1']
         if User.objects.filter(username=uid):
-            return render(request, 'myapp/login.html', {'message': 'Username Already Exists! Please Login'})
+            form1 = LoginForm()
+            return redirect(reverse('myapp:login'), {'message': 'Username Already Exists! Please Login', 'form': form1})
+            # return redirect(request, 'myapp/login.html', {'message': 'Username Already Exists! Please Login'})
         elif form.is_valid():
             form.save()
             user = authenticate(username=uid, password=psw)
@@ -198,3 +211,23 @@ def register(request):
     else:
         form = RegisterForm()
         return render(request, 'myapp/register.html', {'form': form})
+
+
+@login_required
+def myorders(request):
+    if request.user.is_authenticated:
+        sid = request.user.id
+        sname = request.user.first_name
+        try:
+            if Student.objects.get(pk=sid):
+                cors = Order.objects.filter(student__first_name=sname).values_list('courses__title', flat=True)
+                if cors:
+                    return render(request, 'myapp/myorders.html', {'cors': cors})
+                else:
+                    message = 'There are 0 orders'
+                    return render(request, 'myapp/myorders.html', {'message': message})
+        except:
+            message = 'You are not a registered Student'
+            return render(request, 'myapp/myorders.html', {'message': message})
+    else:
+        return render(request, 'myapp/login.html', {'message': 'Please Login First!', 'form': LoginForm()})
