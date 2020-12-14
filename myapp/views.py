@@ -1,5 +1,7 @@
 # Import necessary classes
 from datetime import datetime
+
+from django.contrib.auth.models import User
 from django.utils import timezone
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import SearchForm, OrderForm, ReviewForm, RegisterForm
@@ -8,7 +10,7 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.urls import reverse
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
 
 from .models import Topic, Course, Student, Order
 
@@ -184,7 +186,7 @@ def register(request):
         form = RegisterForm(request.POST)
         uid = request.POST['username']
         psw = request.POST['password1']
-        if User.objects.get(username=uid):
+        if User.objects.filter(username=uid):
             return render(request, 'myapp/login.html', {'message': 'Username Already Exists! Please Login'})
         elif form.is_valid():
             form.save()
@@ -192,7 +194,7 @@ def register(request):
             login(request, user)
             return redirect('myapp:index')
         else:
-            return HttpResponse('Invalid login details.')
+            return HttpResponse('Form is invalid')
     else:
         form = RegisterForm()
         return render(request, 'myapp/register.html', {'form': form})
