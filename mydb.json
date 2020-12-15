@@ -1,0 +1,1823 @@
+[
+{
+ "model": "admin.logentry",
+ "pk": 1,
+ "fields": {
+  "action_time": "2020-10-06T22:27:41.830Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "1",
+  "object_repr": "Topic object (1)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 2,
+ "fields": {
+  "action_time": "2020-10-06T22:27:53.125Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "2",
+  "object_repr": "Topic object (2)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 3,
+ "fields": {
+  "action_time": "2020-10-06T22:28:05.647Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "3",
+  "object_repr": "Topic object (3)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 4,
+ "fields": {
+  "action_time": "2020-10-06T22:28:13.900Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "4",
+  "object_repr": "Topic object (4)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 5,
+ "fields": {
+  "action_time": "2020-10-06T22:28:25.016Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "5",
+  "object_repr": "Topic object (5)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 6,
+ "fields": {
+  "action_time": "2020-10-06T22:28:51.602Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "Course object (1)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 7,
+ "fields": {
+  "action_time": "2020-10-06T22:29:06.366Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "2",
+  "object_repr": "Course object (2)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 8,
+ "fields": {
+  "action_time": "2020-10-06T22:29:30.423Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "3",
+  "object_repr": "Course object (3)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 9,
+ "fields": {
+  "action_time": "2020-10-06T22:29:42.165Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "4",
+  "object_repr": "Course object (4)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 10,
+ "fields": {
+  "action_time": "2020-10-06T22:30:05.037Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "5",
+  "object_repr": "Course object (5)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 11,
+ "fields": {
+  "action_time": "2020-10-06T22:30:14.517Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "3",
+  "object_repr": "Course object (3)",
+  "action_flag": 2,
+  "change_message": "[]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 12,
+ "fields": {
+  "action_time": "2020-10-06T22:30:36.240Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "6",
+  "object_repr": "Course object (6)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 13,
+ "fields": {
+  "action_time": "2020-10-06T22:30:49.224Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "7",
+  "object_repr": "Course object (7)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 14,
+ "fields": {
+  "action_time": "2020-10-06T22:31:02.138Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "8",
+  "object_repr": "Course object (8)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 15,
+ "fields": {
+  "action_time": "2020-10-06T22:31:22.254Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "9",
+  "object_repr": "Course object (9)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 16,
+ "fields": {
+  "action_time": "2020-10-06T22:31:49.955Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "10",
+  "object_repr": "Course object (10)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 17,
+ "fields": {
+  "action_time": "2020-10-06T22:32:06.818Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "11",
+  "object_repr": "Course object (11)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 18,
+ "fields": {
+  "action_time": "2020-10-06T22:32:23.743Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "12",
+  "object_repr": "Course object (12)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 19,
+ "fields": {
+  "action_time": "2020-10-06T22:32:40.437Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "13",
+  "object_repr": "Course object (13)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 20,
+ "fields": {
+  "action_time": "2020-10-06T22:32:53.990Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "14",
+  "object_repr": "Course object (14)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 21,
+ "fields": {
+  "action_time": "2020-10-06T22:33:11.792Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "15",
+  "object_repr": "Course object (15)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 22,
+ "fields": {
+  "action_time": "2020-10-06T22:33:24.361Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "16",
+  "object_repr": "Course object (16)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 23,
+ "fields": {
+  "action_time": "2020-10-06T22:33:38.342Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "17",
+  "object_repr": "Course object (17)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 24,
+ "fields": {
+  "action_time": "2020-10-19T18:28:48.355Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "1",
+  "object_repr": "Topic object (1)",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"Length\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 25,
+ "fields": {
+  "action_time": "2020-10-19T18:28:55.323Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "2",
+  "object_repr": "Topic object (2)",
+  "action_flag": 2,
+  "change_message": "[]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 26,
+ "fields": {
+  "action_time": "2020-10-19T18:29:01.715Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "3",
+  "object_repr": "Topic object (3)",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"Length\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 27,
+ "fields": {
+  "action_time": "2020-10-19T18:29:08.175Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "4",
+  "object_repr": "Topic object (4)",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"Length\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 28,
+ "fields": {
+  "action_time": "2020-10-19T18:29:11.922Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "5",
+  "object_repr": "Topic object (5)",
+  "action_flag": 2,
+  "change_message": "[]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 29,
+ "fields": {
+  "action_time": "2020-10-19T19:44:53.581Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "2",
+  "object_repr": "john",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 30,
+ "fields": {
+  "action_time": "2020-10-19T19:46:31.286Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "3",
+  "object_repr": "mary",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 31,
+ "fields": {
+  "action_time": "2020-10-19T19:48:09.638Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "4",
+  "object_repr": "alan",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 32,
+ "fields": {
+  "action_time": "2020-10-19T19:49:03.888Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "5",
+  "object_repr": "josh",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 33,
+ "fields": {
+  "action_time": "2020-10-19T19:50:07.704Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "6",
+  "object_repr": "chris",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 34,
+ "fields": {
+  "action_time": "2020-10-19T19:50:22.457Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "4",
+  "object_repr": "alan",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"Level\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 35,
+ "fields": {
+  "action_time": "2020-10-19T19:51:21.469Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "1",
+  "object_repr": "Order object (1)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 36,
+ "fields": {
+  "action_time": "2020-10-19T19:51:29.943Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "2",
+  "object_repr": "Order object (2)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 37,
+ "fields": {
+  "action_time": "2020-10-19T19:51:50.542Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "3",
+  "object_repr": "Order object (3)",
+  "action_flag": 1,
+  "change_message": "[{\"added\": {}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 38,
+ "fields": {
+  "action_time": "2020-11-24T05:30:49.812Z",
+  "user": 1,
+  "content_type": 11,
+  "object_id": "1",
+  "object_repr": "yo@gmail.com",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 39,
+ "fields": {
+  "action_time": "2020-11-24T14:50:31.340Z",
+  "user": 1,
+  "content_type": 11,
+  "object_id": "5",
+  "object_repr": "g@g.com",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 40,
+ "fields": {
+  "action_time": "2020-11-24T14:50:31.611Z",
+  "user": 1,
+  "content_type": 11,
+  "object_id": "4",
+  "object_repr": "fsfsdf@g.com",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 41,
+ "fields": {
+  "action_time": "2020-11-24T14:50:31.658Z",
+  "user": 1,
+  "content_type": 11,
+  "object_id": "3",
+  "object_repr": "yoyo@g.com",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 42,
+ "fields": {
+  "action_time": "2020-11-24T14:50:31.712Z",
+  "user": 1,
+  "content_type": 11,
+  "object_id": "2",
+  "object_repr": "yo@gmail.com",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 43,
+ "fields": {
+  "action_time": "2020-11-24T14:50:42.532Z",
+  "user": 1,
+  "content_type": 8,
+  "object_id": "1",
+  "object_repr": "CCNA",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"Num reviews\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 44,
+ "fields": {
+  "action_time": "2020-11-24T15:10:44.574Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "10",
+  "object_repr": "John Smith order price is 319.98",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 45,
+ "fields": {
+  "action_time": "2020-11-24T15:10:44.681Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "9",
+  "object_repr": "John Smith order price is 349.98",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 46,
+ "fields": {
+  "action_time": "2020-11-24T15:10:44.772Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "8",
+  "object_repr": "John Smith order price is 0",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 47,
+ "fields": {
+  "action_time": "2020-11-24T15:10:44.827Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "7",
+  "object_repr": "John Smith order price is 0",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 48,
+ "fields": {
+  "action_time": "2020-11-24T15:10:44.971Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "6",
+  "object_repr": "John Smith order price is 0",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 49,
+ "fields": {
+  "action_time": "2020-11-24T15:10:45.030Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "5",
+  "object_repr": "John Smith order price is 0",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 50,
+ "fields": {
+  "action_time": "2020-11-24T15:10:45.110Z",
+  "user": 1,
+  "content_type": 10,
+  "object_id": "4",
+  "object_repr": "John Smith order price is 0",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 51,
+ "fields": {
+  "action_time": "2020-11-24T15:11:33.279Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "2",
+  "object_repr": "John Smith",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"Registered courses\", \"Interested in\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 52,
+ "fields": {
+  "action_time": "2020-11-24T15:12:04.742Z",
+  "user": 1,
+  "content_type": 9,
+  "object_id": "2",
+  "object_repr": "John Smith",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"Interested in\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 53,
+ "fields": {
+  "action_time": "2020-12-01T03:15:31.143Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "3",
+  "object_repr": "mary",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 54,
+ "fields": {
+  "action_time": "2020-12-01T14:35:26.450Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "5",
+  "object_repr": "josh",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 55,
+ "fields": {
+  "action_time": "2020-12-01T14:35:53.850Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "2",
+  "object_repr": "john",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 56,
+ "fields": {
+  "action_time": "2020-12-01T14:36:45.975Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "6",
+  "object_repr": "chris",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 57,
+ "fields": {
+  "action_time": "2020-12-01T14:37:06.765Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "4",
+  "object_repr": "alan",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 58,
+ "fields": {
+  "action_time": "2020-12-12T16:31:44.333Z",
+  "user": 1,
+  "content_type": 7,
+  "object_id": "5",
+  "object_repr": "Economics",
+  "action_flag": 2,
+  "change_message": "[]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 59,
+ "fields": {
+  "action_time": "2020-12-14T05:32:40.898Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "7",
+  "object_repr": "sunit",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 60,
+ "fields": {
+  "action_time": "2020-12-14T05:34:16.362Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "8",
+  "object_repr": "kra",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 61,
+ "fields": {
+  "action_time": "2020-12-14T15:53:53.821Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "1",
+  "object_repr": "Phaneendra",
+  "action_flag": 2,
+  "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+ }
+},
+{
+ "model": "admin.logentry",
+ "pk": 62,
+ "fields": {
+  "action_time": "2020-12-14T20:20:10.727Z",
+  "user": 1,
+  "content_type": 4,
+  "object_id": "9",
+  "object_repr": "jay",
+  "action_flag": 3,
+  "change_message": ""
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 1,
+ "fields": {
+  "name": "Can add log entry",
+  "content_type": 1,
+  "codename": "add_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 2,
+ "fields": {
+  "name": "Can change log entry",
+  "content_type": 1,
+  "codename": "change_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 3,
+ "fields": {
+  "name": "Can delete log entry",
+  "content_type": 1,
+  "codename": "delete_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 4,
+ "fields": {
+  "name": "Can view log entry",
+  "content_type": 1,
+  "codename": "view_logentry"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 5,
+ "fields": {
+  "name": "Can add permission",
+  "content_type": 2,
+  "codename": "add_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 6,
+ "fields": {
+  "name": "Can change permission",
+  "content_type": 2,
+  "codename": "change_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 7,
+ "fields": {
+  "name": "Can delete permission",
+  "content_type": 2,
+  "codename": "delete_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 8,
+ "fields": {
+  "name": "Can view permission",
+  "content_type": 2,
+  "codename": "view_permission"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 9,
+ "fields": {
+  "name": "Can add group",
+  "content_type": 3,
+  "codename": "add_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 10,
+ "fields": {
+  "name": "Can change group",
+  "content_type": 3,
+  "codename": "change_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 11,
+ "fields": {
+  "name": "Can delete group",
+  "content_type": 3,
+  "codename": "delete_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 12,
+ "fields": {
+  "name": "Can view group",
+  "content_type": 3,
+  "codename": "view_group"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 13,
+ "fields": {
+  "name": "Can add user",
+  "content_type": 4,
+  "codename": "add_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 14,
+ "fields": {
+  "name": "Can change user",
+  "content_type": 4,
+  "codename": "change_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 15,
+ "fields": {
+  "name": "Can delete user",
+  "content_type": 4,
+  "codename": "delete_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 16,
+ "fields": {
+  "name": "Can view user",
+  "content_type": 4,
+  "codename": "view_user"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 17,
+ "fields": {
+  "name": "Can add content type",
+  "content_type": 5,
+  "codename": "add_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 18,
+ "fields": {
+  "name": "Can change content type",
+  "content_type": 5,
+  "codename": "change_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 19,
+ "fields": {
+  "name": "Can delete content type",
+  "content_type": 5,
+  "codename": "delete_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 20,
+ "fields": {
+  "name": "Can view content type",
+  "content_type": 5,
+  "codename": "view_contenttype"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 21,
+ "fields": {
+  "name": "Can add session",
+  "content_type": 6,
+  "codename": "add_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 22,
+ "fields": {
+  "name": "Can change session",
+  "content_type": 6,
+  "codename": "change_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 23,
+ "fields": {
+  "name": "Can delete session",
+  "content_type": 6,
+  "codename": "delete_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 24,
+ "fields": {
+  "name": "Can view session",
+  "content_type": 6,
+  "codename": "view_session"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 25,
+ "fields": {
+  "name": "Can add topic",
+  "content_type": 7,
+  "codename": "add_topic"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 26,
+ "fields": {
+  "name": "Can change topic",
+  "content_type": 7,
+  "codename": "change_topic"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 27,
+ "fields": {
+  "name": "Can delete topic",
+  "content_type": 7,
+  "codename": "delete_topic"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 28,
+ "fields": {
+  "name": "Can view topic",
+  "content_type": 7,
+  "codename": "view_topic"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 29,
+ "fields": {
+  "name": "Can add course",
+  "content_type": 8,
+  "codename": "add_course"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 30,
+ "fields": {
+  "name": "Can change course",
+  "content_type": 8,
+  "codename": "change_course"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 31,
+ "fields": {
+  "name": "Can delete course",
+  "content_type": 8,
+  "codename": "delete_course"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 32,
+ "fields": {
+  "name": "Can view course",
+  "content_type": 8,
+  "codename": "view_course"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 33,
+ "fields": {
+  "name": "Can add user",
+  "content_type": 9,
+  "codename": "add_student"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 34,
+ "fields": {
+  "name": "Can change user",
+  "content_type": 9,
+  "codename": "change_student"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 35,
+ "fields": {
+  "name": "Can delete user",
+  "content_type": 9,
+  "codename": "delete_student"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 36,
+ "fields": {
+  "name": "Can view user",
+  "content_type": 9,
+  "codename": "view_student"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 37,
+ "fields": {
+  "name": "Can add order",
+  "content_type": 10,
+  "codename": "add_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 38,
+ "fields": {
+  "name": "Can change order",
+  "content_type": 10,
+  "codename": "change_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 39,
+ "fields": {
+  "name": "Can delete order",
+  "content_type": 10,
+  "codename": "delete_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 40,
+ "fields": {
+  "name": "Can view order",
+  "content_type": 10,
+  "codename": "view_order"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 41,
+ "fields": {
+  "name": "Can add review",
+  "content_type": 11,
+  "codename": "add_review"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 42,
+ "fields": {
+  "name": "Can change review",
+  "content_type": 11,
+  "codename": "change_review"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 43,
+ "fields": {
+  "name": "Can delete review",
+  "content_type": 11,
+  "codename": "delete_review"
+ }
+},
+{
+ "model": "auth.permission",
+ "pk": 44,
+ "fields": {
+  "name": "Can view review",
+  "content_type": 11,
+  "codename": "view_review"
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 1,
+ "fields": {
+  "password": "pbkdf2_sha256$216000$PSX0w4Rxk57k$NC69zLYR0J1TBdfA7lckVU90fsHLhhuv0DB9YiKHjK0=",
+  "last_login": "2020-12-14T20:19:54.413Z",
+  "is_superuser": true,
+  "username": "Phaneendra",
+  "first_name": "Phaneendra",
+  "last_name": "Gudikandula",
+  "email": "gudikan@uwindsor.ca",
+  "is_staff": true,
+  "is_active": true,
+  "date_joined": "2020-10-06T22:21:50Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 2,
+ "fields": {
+  "password": "pbkdf2_sha256$216000$bUrdpQSKIWpB$WrB2v/Z1vml5Pc4DPBYfqaOZ81RzWy1fUweZHROtoGQ=",
+  "last_login": "2020-12-14T18:01:24.880Z",
+  "is_superuser": false,
+  "username": "john",
+  "first_name": "John",
+  "last_name": "Smith",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-10-19T19:41:49Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 3,
+ "fields": {
+  "password": "pbkdf2_sha256$216000$aRvxdckb5RjO$uGRQYBe3AZ9Y4nubhuQ+dMEB96i3LoR3+YVgX293veM=",
+  "last_login": "2020-12-15T03:28:35.196Z",
+  "is_superuser": false,
+  "username": "mary",
+  "first_name": "Mary",
+  "last_name": "Jones",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-10-19T19:44:54Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 4,
+ "fields": {
+  "password": "pbkdf2_sha256$216000$MpX9GxMLA3qh$4WBKsIfLfVti6TBbWCjEjFeKjkzNAUU0Yu8BpEXg3FM=",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "alan",
+  "first_name": "Alan",
+  "last_name": "George",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-10-19T19:46:31Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 5,
+ "fields": {
+  "password": "pbkdf2_sha256$216000$zl3qSVH3w7vW$D34rQcwok1AZXBwoeRoar4KLiCoHSnjJFE/5xYs+WVw=",
+  "last_login": "2020-12-14T18:53:45.592Z",
+  "is_superuser": false,
+  "username": "josh",
+  "first_name": "Josh",
+  "last_name": "Jones",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-10-19T19:48:11Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "auth.user",
+ "pk": 6,
+ "fields": {
+  "password": "pbkdf2_sha256$216000$Tg9kz2hyHj1r$ba4uw8DECh+Hr+/23KNUvmZMmx65T/xY5DEngn/qKlU=",
+  "last_login": null,
+  "is_superuser": false,
+  "username": "chris",
+  "first_name": "Chris",
+  "last_name": "Hall",
+  "email": "",
+  "is_staff": false,
+  "is_active": true,
+  "date_joined": "2020-10-19T19:49:04Z",
+  "groups": [],
+  "user_permissions": []
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 1,
+ "fields": {
+  "app_label": "admin",
+  "model": "logentry"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 2,
+ "fields": {
+  "app_label": "auth",
+  "model": "permission"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 3,
+ "fields": {
+  "app_label": "auth",
+  "model": "group"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 4,
+ "fields": {
+  "app_label": "auth",
+  "model": "user"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 5,
+ "fields": {
+  "app_label": "contenttypes",
+  "model": "contenttype"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 6,
+ "fields": {
+  "app_label": "sessions",
+  "model": "session"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 7,
+ "fields": {
+  "app_label": "myapp",
+  "model": "topic"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 8,
+ "fields": {
+  "app_label": "myapp",
+  "model": "course"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 9,
+ "fields": {
+  "app_label": "myapp",
+  "model": "student"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 10,
+ "fields": {
+  "app_label": "myapp",
+  "model": "order"
+ }
+},
+{
+ "model": "contenttypes.contenttype",
+ "pk": 11,
+ "fields": {
+  "app_label": "myapp",
+  "model": "review"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "c0zphp8l6ko2uk7lmlyvh9boyog739hy",
+ "fields": {
+  "session_data": ".eJxVjDkOwjAQRe_iGlle4o2SnjNY45kxDiBHylIh7g6RUkD733v_JTJsa8vbwnMeSZyFFqffrQA-uO-A7tBvk8Spr_NY5K7Igy7yOhE_L4f7d9Bgad-6qGD84CC4gBoDRjSVNPgBrQtstbKGVSqobTKmqpCsImDvKhHHaFm8P82cN5w:1kZya9:9lgF_EcqOgQO032Y95A2vF4LVTvV14yLZLVGzIzS6vc",
+  "expire_date": "2020-11-17T15:50:49.504Z"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "ezr7o3x1u87dh630fiyu9c9rcas7v9dv",
+ "fields": {
+  "session_data": ".eJxVjDkOwjAQRe_iGlle4o2SnjNY45kxDiBHylIh7g6RUkD733v_JTJsa8vbwnMeSZyFFqffrQA-uO-A7tBvk8Spr_NY5K7Igy7yOhE_L4f7d9Bgad-6qGD84CC4gBoDRjSVNPgBrQtstbKGVSqobTKmqpCsImDvKhHHaFm8P82cN5w:1kPvQ6:g1-hCNBHQ8sXAbuH9jqc-wvFQRMTOesEMoskw6xgYbY",
+  "expire_date": "2020-10-20T22:26:54.573Z"
+ }
+},
+{
+ "model": "sessions.session",
+ "pk": "k08a9zj1fr5ncp7bh4itirwskeiq0kn6",
+ "fields": {
+  "session_data": ".eJxVjcEOgyAQBf-FszXLIhQ89t5vICug0hpoRJM2Tf-9mnhor28m897M0rqMdi1httGzlglW_W4duXtIO_A3SkOuXU7LHLt6V-qDlvqafZguh_sXGKmMe1agMaEBrSQE7yEQgCHFz1xhL53mHMg7IQxoIxyXjT6DBCDUfdf1Sm_RicpipzzEtPUQEE4cT7ypEFvUrZD7bwmlxJxseD7i_GKtUACfL-1ER1I:1kp10t:-lDfqnTqQD3uzJZCbMig3CdImRnk1-sQ3kovAtR34oQ",
+  "expire_date": "2020-12-15T04:28:35.243Z"
+ }
+},
+{
+ "model": "myapp.topic",
+ "pk": 1,
+ "fields": {
+  "name": "Web Development",
+  "length": 10
+ }
+},
+{
+ "model": "myapp.topic",
+ "pk": 2,
+ "fields": {
+  "name": "Management",
+  "length": 12
+ }
+},
+{
+ "model": "myapp.topic",
+ "pk": 3,
+ "fields": {
+  "name": "IT Certification",
+  "length": 14
+ }
+},
+{
+ "model": "myapp.topic",
+ "pk": 4,
+ "fields": {
+  "name": "Sports",
+  "length": 8
+ }
+},
+{
+ "model": "myapp.topic",
+ "pk": 5,
+ "fields": {
+  "name": "Economics",
+  "length": 12
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 1,
+ "fields": {
+  "title": "CCNA",
+  "topic": 3,
+  "price": "199.99",
+  "for_everyone": false,
+  "description": "",
+  "num_reviews": 1
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 2,
+ "fields": {
+  "title": "AWS",
+  "topic": 3,
+  "price": "119.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 2
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 3,
+ "fields": {
+  "title": "CompTIA Security",
+  "topic": 3,
+  "price": "139.99",
+  "for_everyone": false,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 4,
+ "fields": {
+  "title": "Oracle SQL",
+  "topic": 3,
+  "price": "159.99",
+  "for_everyone": false,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 5,
+ "fields": {
+  "title": "Microeconomics",
+  "topic": 5,
+  "price": "199.99",
+  "for_everyone": false,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 6,
+ "fields": {
+  "title": "Introduction to Economics",
+  "topic": 5,
+  "price": "174.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 1
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 7,
+ "fields": {
+  "title": "Global Economics",
+  "topic": 5,
+  "price": "149.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 8,
+ "fields": {
+  "title": "Web Dev Bootcamp",
+  "topic": 1,
+  "price": "199.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 9,
+ "fields": {
+  "title": "Web Design",
+  "topic": 1,
+  "price": "159.99",
+  "for_everyone": false,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 10,
+ "fields": {
+  "title": "Web Development Masterclass",
+  "topic": 1,
+  "price": "124.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 11,
+ "fields": {
+  "title": "Build Responsive Websites",
+  "topic": 1,
+  "price": "149.99",
+  "for_everyone": false,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 12,
+ "fields": {
+  "title": "Innovation for Business",
+  "topic": 2,
+  "price": "174.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 13,
+ "fields": {
+  "title": "Leadership Skills",
+  "topic": 2,
+  "price": "184.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 14,
+ "fields": {
+  "title": "Project Management",
+  "topic": 2,
+  "price": "149.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 15,
+ "fields": {
+  "title": "Sports Psychology",
+  "topic": 4,
+  "price": "174.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 16,
+ "fields": {
+  "title": "Introduction to Soccer",
+  "topic": 4,
+  "price": "134.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.course",
+ "pk": 17,
+ "fields": {
+  "title": "Swimming Guide for Beginners",
+  "topic": 4,
+  "price": "99.99",
+  "for_everyone": true,
+  "description": "",
+  "num_reviews": 0
+ }
+},
+{
+ "model": "myapp.student",
+ "pk": 2,
+ "fields": {
+  "level": "HS",
+  "address": "123 University Avenue",
+  "province": "ON",
+  "registered_courses": [
+   4,
+   8,
+   13,
+   14
+  ],
+  "interested_in": [
+   1,
+   2,
+   3
+  ]
+ }
+},
+{
+ "model": "myapp.student",
+ "pk": 3,
+ "fields": {
+  "level": "UG",
+  "address": "235 Sunset Avenue",
+  "province": "BC",
+  "registered_courses": [],
+  "interested_in": [
+   2,
+   5
+  ]
+ }
+},
+{
+ "model": "myapp.student",
+ "pk": 4,
+ "fields": {
+  "level": "ND",
+  "address": "306 Prince Street",
+  "province": "AB",
+  "registered_courses": [
+   2
+  ],
+  "interested_in": [
+   2,
+   3,
+   4
+  ]
+ }
+},
+{
+ "model": "myapp.student",
+ "pk": 5,
+ "fields": {
+  "level": "PG",
+  "address": "442 Sunset Avenue",
+  "province": "QC",
+  "registered_courses": [],
+  "interested_in": [
+   3,
+   4,
+   5
+  ]
+ }
+},
+{
+ "model": "myapp.student",
+ "pk": 6,
+ "fields": {
+  "level": "HS",
+  "address": "987 King Street",
+  "province": "ON",
+  "registered_courses": [
+   5,
+   11
+  ],
+  "interested_in": [
+   1
+  ]
+ }
+},
+{
+ "model": "myapp.order",
+ "pk": 1,
+ "fields": {
+  "student": 2,
+  "order_status": 1,
+  "order_date": "2020-10-19",
+  "courses": [
+   4,
+   8
+  ]
+ }
+},
+{
+ "model": "myapp.order",
+ "pk": 2,
+ "fields": {
+  "student": 4,
+  "order_status": 1,
+  "order_date": "2020-10-19",
+  "courses": [
+   2
+  ]
+ }
+},
+{
+ "model": "myapp.order",
+ "pk": 3,
+ "fields": {
+  "student": 6,
+  "order_status": 1,
+  "order_date": "2020-10-19",
+  "courses": [
+   5,
+   11
+  ]
+ }
+},
+{
+ "model": "myapp.order",
+ "pk": 11,
+ "fields": {
+  "student": 2,
+  "order_status": 1,
+  "order_date": "2020-11-24",
+  "courses": [
+   13,
+   14
+  ]
+ }
+},
+{
+ "model": "myapp.review",
+ "pk": 6,
+ "fields": {
+  "reviewer": "f@f.com",
+  "course": 1,
+  "rating": 2,
+  "comments": "bleh",
+  "date": "2020-11-24"
+ }
+},
+{
+ "model": "myapp.review",
+ "pk": 7,
+ "fields": {
+  "reviewer": "Phani7.g@gmail.com",
+  "course": 2,
+  "rating": 4,
+  "comments": "good",
+  "date": "2020-11-24"
+ }
+}
+]

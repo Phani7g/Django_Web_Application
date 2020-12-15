@@ -1,3 +1,4 @@
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 import datetime
 from django.contrib.auth.models import User
@@ -16,7 +17,8 @@ class Topic(models.Model):
 class Course(models.Model):
     title = models.CharField(max_length=200)
     topic = models.ForeignKey(Topic, related_name='courses', on_delete=models.CASCADE)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2,
+                                validators=[MaxValueValidator(500), MinValueValidator(50)])
     for_everyone = models.BooleanField(default=True)
     description = models.TextField(blank=True)
     num_reviews = models.PositiveIntegerField(default=0)
@@ -51,9 +53,9 @@ class Order(models.Model):
     order_date = models.DateField(default=timezone.now())
 
     def total_items(self):
-        course_num=0
+        course_num = 0
         for i in self.courses.all():
-            course_num+=1
+            course_num += 1
         return course_num
 
     def total_cost(self):

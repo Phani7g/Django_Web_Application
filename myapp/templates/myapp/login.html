@@ -1,18 +1,24 @@
-<html>
-<head>
-    <title>Login Page</title>
-</head>
-<body>
-    {% if message %}
-        {{ message }}<br><br>
-    {% endif %}
-    <h3>Please Login!</h3>
-    <form id="Login_form" action="{% url 'myapp:login' %}" method="post">
+{% extends 'myapp/base.html' %}
+
+{% block body_block %}
+<div class="mai">
+    <center>
+    <h1>Login Here!</h1>
+    <form action="{% url 'myapp:login' %}" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" name="submit2" value="Login" />
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>{{ form.username }}</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>{{ form.password }}</td>
+            </tr>
+        </table>
+        <a href="myapp/resetpassword.html" class="link">Forgot Password</a><br><br>
+        <input type="submit" name="submit1" value="Login" />
     </form>
-</body>
-</html>
-
-
+    </center>
+</div>
+{% endblock %}

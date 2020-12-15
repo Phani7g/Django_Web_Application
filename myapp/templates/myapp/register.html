@@ -1,10 +1,41 @@
 {% extends 'myapp/base.html' %}
 
 {% block body_block %}
-  <h2>Sign up</h2>
+    <div class="main_body">
+    <center>
+  <h1>Sign up</h1>
+
   <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign up</button>
+      <table>
+          <tr>
+              <td>Username</td>
+              <td>{{ form.username }}</td>
+          </tr>
+          <tr>
+              <td>Firstname</td>
+              <td>{{ form.firstname }}</td>
+          </tr>
+          <tr>
+              <td>Lastname</td>
+              <td>{{ form.lastname }}</td>
+          </tr>
+          <tr>
+              <td>E-mail ID</td>
+              <td>{{ form.email }}</td>
+          </tr>
+          <tr>
+              <td>Enter Password</td>
+              <td>{{ form.password1 }}</td>
+          </tr>
+          <tr>
+              <td>Re-Enter Password</td>
+              <td>{{ form.password2 }}</td>
+          </tr>
+      </table>
+
+    <input type="submit" value="Sign Up">
   </form>
+            </center>
+    </div>
 {% endblock %}

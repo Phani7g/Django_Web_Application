@@ -1,8 +1,7 @@
 from django import forms
+from myapp.models import Order, Review
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-
-from myapp.models import Order, Review
 
 
 class SearchForm(forms.Form):
@@ -13,9 +12,8 @@ class SearchForm(forms.Form):
         (14, '14 Weeks'),
     ]
     Student_Name = forms.CharField(max_length=100, required=False)
-    Preferred_course_duration = forms.TypedChoiceField(widget=forms.RadioSelect,
-                                                       choices=LENGTH_CHOICES, coerce=int, required=False)
-    Maximum_Price = forms.IntegerField(min_value=0)
+    Preferred_course_duration = forms.TypedChoiceField(widget=forms.RadioSelect, choices=LENGTH_CHOICES, coerce=int, required=False)
+    Maximum_price = forms.IntegerField(min_value=0)
 
 
 class OrderForm(forms.ModelForm):
@@ -30,19 +28,10 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ['reviewer', 'course', 'rating', 'comments']
-        widgets = {'course': forms.RadioSelect}
-        labels = {'reviewer': u'Please enter a valid email',
-                  'rating': u'Rating: An integer between 1 (worst) and 5 (best)'}
-
-
-class RegisterForm(UserCreationForm):
-    firstname = forms.CharField(max_length=30, required=True, help_text='Required.')
-    lastname = forms.CharField(max_length=30, required=True, help_text='Required.')
-    email = forms.EmailField(max_length=254, help_text='Required. Valid email address.')
-
-    class Meta:
-        model = User
-        fields = ['username', 'firstname', 'lastname', 'email', 'password1', 'password2']
+        labels = {'reviewer': u'E-mail', 'rating': 'Rating'}
+        help_texts = {
+            'rating':'An integer between 1(worst) and 5(best)',
+        }
 
 
 class LoginForm(forms.ModelForm):
@@ -50,3 +39,25 @@ class LoginForm(forms.ModelForm):
         model = User
         fields = ['username', 'password']
         widgets = {'password': forms.PasswordInput}
+        help_texts = {
+            'username': None,
+            'password': None,
+        }
+
+
+class RegisterForm(UserCreationForm):
+    firstname = forms.CharField(max_length=30, required=True)
+    lastname = forms.CharField(max_length=30, required=True)
+    email = forms.EmailField(max_length=254)
+
+    class Meta:
+        model = User
+        fields = ['username', 'firstname', 'lastname', 'email', 'password1', 'password2']
+        help_texts = {
+            'username': None,
+            'password1': None,
+            'password2': None,
+            'firstname': None,
+            'lastname': None,
+            'email': None,
+        }

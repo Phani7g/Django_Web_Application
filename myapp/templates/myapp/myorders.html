@@ -2,12 +2,32 @@
 
 
 {% block body_block %}
-    <ul>
+    <div class="main_body">
+
     {% if message %}
-        {{ message }}
+        <h3>{{ message }}</h3>
+    {% else %}
+    <h1>Ordered Courses</h1>
+    {% if orders %}
+        <table>
+            <tr>
+                <th>Order ID</th>
+                <th>Order Date</th>
+                <th>Total Cost</th>
+                <th>Ordered Courses</th>
+            </tr>
+        {%  for order in orders %}
+            <tr>
+                <td>{{ order.id }}</td>
+                <td>{{ order.order_date }}</td>
+                <td>{{ order.total_cost }}</td>
+                {% for c in  order.courses.all %}
+                    <td>{{ c }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </table>
     {% endif %}
-    {%  for course in cors %}
-        <li> {{ course }} </li>
-    {% endfor %}
-    </ul>
+    {% endif %}
+    </div>
 {% endblock %}
