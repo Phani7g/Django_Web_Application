@@ -14,6 +14,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.contrib.auth.models import User
 from django.views import View
+
+
 # Create your views here.
 
 
@@ -21,7 +23,8 @@ class IndexView(View):
 
     def get(self, request):
         top_list = Topic.objects.all().order_by('id')[:10]
-        return render(request, 'myapp/index.html', {'top_list': top_list, 'last_login': request.session.get('last_login', False)})
+        return render(request, 'myapp/index.html',
+                      {'top_list': top_list, 'last_login': request.session.get('last_login', False)})
     # response = HttpResponse()
     # heading1 = '<p>' + 'List of topics: ' + '</p>'
     # response.write(heading1)
@@ -134,7 +137,7 @@ def review(request):
                         return redirect('myapp:index')
                     else:
                         return render(request, 'myapp/review.html',
-                              {'form': form, 'messege': 'You must enter a rating between 1 and 5!'})
+                                      {'form': form, 'messege': 'You must enter a rating between 1 and 5!'})
                 else:
                     return HttpResponse('Invalid data')
             else:
@@ -174,15 +177,18 @@ def user_logout(request):
 
 def my_account(request):
     if request.user.is_authenticated:
-        sid = request.user.id
+        sname = request.user.first_name
         try:
-            if Student.objects.get(pk=sid):
-                user = get_object_or_404(Student, pk=sid)
-                tops = Student.objects.filter(id=sid).values_list("interested_in__name", flat=True)
-                cors = Student.objects.filter(id=sid).values_list('registered_courses__title', flat=True)
-                return render(request, 'myapp/myaccount.html', {'user': user, 'tops': tops, 'cors': cors})
+            if Student.objects.get(first_name=sname):
+                user = get_object_or_404(Student, first_name=sname)
+                tops = Student.objects.filter(first_name=sname).values_list("interested_in__name", flat=True)
+                topics = Topic.objects.filter(name=tops)
+                cors = Student.objects.filter(first_name=sname).values_list('registered_courses__title', flat=True)
+                return render(request, 'myapp/myaccount.html',
+                              {'user': user, 'tops': tops, 'cors': cors, 'topics': topics})
         except:
-            return render(request, 'myapp/myaccount.html', {'message': 'You are not a registered student! Please Login as Student!!'})
+            return render(request, 'myapp/myaccount.html',
+                          {'message': 'You are not a registered student! Please Login as Student!!'})
     else:
         message = 'Please Login First!'
         return redirect(reverse('myapp:login'), {'message': message, 'form': LoginForm()})
@@ -196,19 +202,34 @@ def register(request):
         em = request.POST['email']
         if User.objects.filter(username=uid):
             form1 = LoginForm()
-            return render(request, 'myapp/login.html', {'message': 'Username Already Exists! Please Login', 'form': form1})
+            return render(request, 'myapp/login.html',
+                          {'message': 'Username Already Exists! Please Login', 'form': form1})
         elif form.is_valid():
+            prov = request.POST['province']
+            addr = request.POST['address']
+            reg_cour = form.cleaned_data['registered_courses']
+            print(reg_cour)
+            int_in = form.cleaned_data['interested_in']
+            lvl = request.POST['level']
             new_user = User.objects.create_user(uid, em, psw)
             new_user.first_name = request.POST['firstname']
             new_user.last_name = request.POST['lastname']
             new_user.save()
+            instant = Student.objects.create(first_name=new_user.first_name, last_name=new_user.last_name, level=lvl,
+                                             address=addr,
+                                             province=prov)
+            for r in reg_cour:
+                instant.registered_courses.add(r)
+            for i in int_in:
+                instant.interested_in.add(i)
             user = authenticate(username=uid, password=psw)
             login(request, user)
-            return redirect('myapp:index')
+            return redirect('myapp:my_account')
         else:
             return HttpResponse('Invalid login details.')
     else:
         form = RegisterForm()
+        # std = Student.objects.all() , 'stud': std
         return render(request, 'myapp/register.html', {'form': form})
 
 
@@ -226,7 +247,7 @@ def myorders(request):
                     message = 'There are 0 orders'
                     return render(request, 'myapp/myorders.html', {'message': message})
         except:
-                message = 'You are not a registered Student'
-                return render(request, 'myapp/myorders.html', {'message': message})
+            message = 'You are not a registered Student'
+            return render(request, 'myapp/myorders.html', {'message': message})
     else:
         return render(request, 'myapp/login.html', {'form': LoginForm()})

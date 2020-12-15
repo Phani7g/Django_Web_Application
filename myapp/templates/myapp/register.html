@@ -1,9 +1,8 @@
 {% extends 'myapp/base.html' %}
-
 {% block body_block %}
     <div class="main_body">
     <center>
-  <h1>Sign up</h1>
+  <h1>Sign up as Student</h1>
 
   <form method="post">
     {% csrf_token %}
@@ -23,6 +22,26 @@
           <tr>
               <td>E-mail ID</td>
               <td>{{ form.email }}</td>
+          </tr>
+          <tr>
+              <td>Address</td>
+              <td>{{ form.address }}</td>
+          </tr>
+          <tr>
+              <td>Province</td>
+              <td>{{ form.province }}</td>
+          </tr>
+          <tr>
+              <td>Registered Courses</td>
+              <td>{{ form.registered_courses }}</td>
+          </tr>
+          <tr>
+              <td>Interested in</td>
+              <td>{{ form.interested_in }}</td>
+          </tr>
+          <tr>
+              <td>Level</td>
+              <td>{{ form.level }}</td>
           </tr>
           <tr>
               <td>Enter Password</td>

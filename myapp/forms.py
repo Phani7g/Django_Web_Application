@@ -1,5 +1,5 @@
 from django import forms
-from myapp.models import Order, Review
+from myapp.models import Order, Review, Student, Course, Topic
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
@@ -12,7 +12,8 @@ class SearchForm(forms.Form):
         (14, '14 Weeks'),
     ]
     Student_Name = forms.CharField(max_length=100, required=False)
-    Preferred_course_duration = forms.TypedChoiceField(widget=forms.RadioSelect, choices=LENGTH_CHOICES, coerce=int, required=False)
+    Preferred_course_duration = forms.TypedChoiceField(widget=forms.RadioSelect, choices=LENGTH_CHOICES, coerce=int,
+                                                       required=False)
     Maximum_price = forms.IntegerField(min_value=0)
 
 
@@ -30,7 +31,7 @@ class ReviewForm(forms.ModelForm):
         fields = ['reviewer', 'course', 'rating', 'comments']
         labels = {'reviewer': u'E-mail', 'rating': 'Rating'}
         help_texts = {
-            'rating':'An integer between 1(worst) and 5(best)',
+            'rating': 'An integer between 1(worst) and 5(best)',
         }
 
 
@@ -49,10 +50,20 @@ class RegisterForm(UserCreationForm):
     firstname = forms.CharField(max_length=30, required=True)
     lastname = forms.CharField(max_length=30, required=True)
     email = forms.EmailField(max_length=254)
+    LVL_CHOICES = (('HS', 'High School'),
+                   ('UG', 'Undergraduate'),
+                   ('PG', 'Postgraduate'),
+                   ('ND', 'No Degree'),)
+    level = forms.ChoiceField(choices=LVL_CHOICES)
+    address = forms.CharField(max_length=100)
+    province = forms.CharField(max_length=2)
+    registered_courses = forms.ModelMultipleChoiceField(queryset=Course.objects.all())
+    interested_in = forms.ModelMultipleChoiceField(queryset=Topic.objects.all())
 
     class Meta:
         model = User
-        fields = ['username', 'firstname', 'lastname', 'email', 'password1', 'password2']
+        fields = ['username', 'firstname', 'lastname', 'email', 'level', 'address', 'province', 'registered_courses',
+                  'interested_in', 'password1', 'password2']
         help_texts = {
             'username': None,
             'password1': None,
@@ -61,3 +72,5 @@ class RegisterForm(UserCreationForm):
             'lastname': None,
             'email': None,
         }
+
+
